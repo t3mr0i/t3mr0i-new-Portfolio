@@ -1,28 +1,44 @@
 .Header {
     position: fixed;
     width: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
     z-index: 100;
+    background-color: rgb(0, 0, 0), 05;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    border-radius: 25px;
 }
 
 .HeaderScrolled {
-    background: rgba(0,0,0, 0.8);
-    padding: 15px 0;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), visibility 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    visibility: hidden;
     backdrop-filter: blur(20px);
 }
 
+.aScrolled {
+    color: white;
+    font-weight: 200;
+}
+
+#___gatsby {
+    background-color: blue;
+}
+
 .HeaderGroup {
-    max-width: 800px;
+    padding-top: 5%;
+    padding-right: 10%;
+    max-width: 500px;
     margin: 0 auto;
     display: grid;
+    grid-gap: 40px;
     grid-template-columns: repeat(5, auto);
-    align-items: center;
+    align-items: right;
     justify-items: center;
+    float: right;
 }
 
 .Header a {
-    color: #333333;
+    color: black;
     font-weight: 700;
 }
 
@@ -49,11 +65,9 @@
     .Header {
         padding: 15px 0;
     }
-
     .HeaderGroup {
         grid-template-columns: repeat(4, auto);
     }
-
     .Header a:nth-child(4) {
         display: none;
     }

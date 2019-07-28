@@ -5,6 +5,7 @@ import '../layouts/index.css'
 
 class Header extends React.Component {
 
+  
   constructor(props) {
     super(props)
   
@@ -29,11 +30,11 @@ class Header extends React.Component {
   }
 
     
-  
 
   render() {
     return (
     <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
+    <div className={this.state.hasScrolled ? '___gatsby aScrolled' : '___gatsby'}>
 
   
  
@@ -41,9 +42,12 @@ class Header extends React.Component {
   <img width="30" src={require('../images/temroiNew.png')} />
 
     <Link to="/courses">work</Link>
+    
     <Link to="/workshops">me</Link>
   </div>
 </div>
+</div>
+
 )
 }
 }
