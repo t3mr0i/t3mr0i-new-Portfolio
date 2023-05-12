@@ -1,26 +1,43 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Kai's Portfolio Page
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+This is the source code for Kai's portfolio page, a UX/UI Designer & Programmer based in Bremen. The site was built with Next.js and Tailwind CSS.
 
-## Install
+## Features
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+- Display of Kai's creative projects
+- Dynamic scrolling effects
+- Fully responsive design
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
+## Project Structure
+.
+├── components
+│ ├── Card.js
+│ └── Header.js
+├── pages
+│ └── index.js
+├── public
+│ ├── images
+│ └── styles
+│ ├── Card.module.css
+│ ├── Header.module.css
+│ └── Home.module.css
+├── README.md
+└── package.json
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
 
-## Deploy
+## Running Locally
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+To get this project running locally on your machine, follow these steps:
+
+1. Clone the repository to your machine.
+2. Run `npm install` to install all dependencies.
+3. Run `npm run dev` to start the development server.
+4. Navigate to `localhost:3000` in your browser to view the site.
+
+## Contributing
+
+This project is not currently open for contributions.
+
+## License
+
+This project is licensed under the MIT License.
